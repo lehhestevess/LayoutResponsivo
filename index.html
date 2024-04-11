@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout responsivo</title>
+        <style>
+         
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .container1 {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                overflow: hidden; 
+            }
+            .column {
+        float: left;
+        box-sizing: border-box;
+        padding: 20px;
+            }
+            .column-1 {
+                width: 30%;
+                background-color: #a9d8e0;
+            }
+            .column-2 {
+                width: 30%;
+                background-color: #cfe8ee;
+            }
+            @media screen and (max-width: 768px) {
+                .column {
+                    width: 100%;
+                }
+            }
+            .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        }
+        .box {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .box {
+                margin: 10px 0;
+            }
+        }
+        .container2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        }
+        .item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column column-1">
+                <h2>Coluna 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ultricies ante, at hendrerit quam aliquet nec.</p>
+            </div>
+            <div class="column column-2">
+                <h2>Coluna 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ultricies ante, at hendrerit quam aliquet nec.</p>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="box">
+                <img src="https://i.postimg.cc/9fVQXkys/e8ab1030df9c3aa1fcce56d4fa0dcb1e.jpg"width="300" height="333" alt="Imagem da Caixa 1">
+                <p> As nuvens e o céu</p>
+            </div>
+            <div class="box">
+                <img src="https://i.postimg.cc/sxdscpSd/d7eea9725c0468245296f8c04d91327b.jpg"width="300" height="333" alt="Imagem da Caixa 2">
+                <p>Flores brancas e a grama</p>
+            </div>
+            <div class="box">
+                <img src="https://i.postimg.cc/CKS2RdwL/656ea3bc48008e7649a5863d03653ffd.jpg" width="300" height="333" alt="Imagem da Caixa 3">
+                <p>O mar e um coração</p>
+            </div>
+        </div> 
+        <div class="container2">
+            <div class="item">
+                <h2>Quadrado 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ultricies ante, at hendrerit quam aliquet nec.</p>
+            </div>
+            <div class="item">
+                <h2>Quadrado 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ultricies ante, at hendrerit quam aliquet nec.</p>
+            </div>
+            <div class="item">
+                <h2>Quadrado 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ultricies ante, at hendrerit quam aliquet nec.</p>
+            </div>
+            <div class="item">
+                <h2>Quadrado 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ultricies ante, at hendrerit quam aliquet nec.</p>
+            </div>
+        </div>
+    </body>
+</html>
