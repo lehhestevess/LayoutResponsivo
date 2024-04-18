@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Flexbox Acessivel</title>
+<style>
+     body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        }
+        .box {
+        flex: 1;
+        margin: 0 10px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        text-align: center;
+        }
+        .box img {
+        max-width: 100%;
+        height: auto;
+        }
+        @media screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+        .box {
+            margin: 10px 0;
+        }
+        }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="box">
+    <img src="https://i.postimg.cc/pV9dC0yK/roxo-2.jpg"width="300" height="333" alt="Imagem da Caixa 1">
+
+</div>
+<div class="box">
+    <img src="https://i.postimg.cc/15qZn2XY/roxo-1.jpg"width="300" height="333" alt="Imagem da Caixa 2">
+   
+</div>
+<div class="box">
+    <img src="https://i.postimg.cc/Fsm2zzt1/roxo-3.jpg" width="300" height="333" alt="Imagem da Caixa 3">
+
+</div>
+</div> 
+</body>
+</html>
