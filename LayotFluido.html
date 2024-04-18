@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Fluido</title>
+    <style>
+         
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container1 {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden; 
+        }
+        .column {
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+        }
+        .column-1 {
+            width: 30%;
+            background-color: #a9d8e0;
+        }
+        .column-2 {
+            width: 30%;
+            background-color: #cfe8ee;
+        }
+        @media screen and (max-width: 768px) {
+            .column {
+                width: 100%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column column-1">
+                <h2>Coluna 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ultricies ante, at hendrerit quam aliquet nec.</p>
+            </div>
+            <div class="column column-2">
+                <h2>Coluna 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ultricies ante, at hendrerit quam aliquet nec.</p>
+            </div>
+        </div> 
+    </body>
+    </html>
