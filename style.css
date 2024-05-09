@@ -31,3 +31,8 @@ body {
 .menu ul li a:hover {
     background-color: #cfe8ee;
 }
+
+@media only screen and (max-width: 1000px) {
+    header {
+      font-size: 20px;
+    }
