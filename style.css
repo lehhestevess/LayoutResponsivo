@@ -14,11 +14,11 @@ body {
 }
 .menu ul li {
     display: inline-block;
-    margin-right: 20px; /* Espaçamento entre os itens do menu */ste
+    margin-right: 20px; 
 }
 
 .menu ul li:last-child {
-    margin-right: 0; /* Remove o espaçamento do último item */
+    margin-right: 0; 
 }
 .menu ul li a {
     text-decoration: none;
